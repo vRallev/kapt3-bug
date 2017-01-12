@@ -1,0 +1,31 @@
+buildscript {
+    ext.kotlinVersion = '1.0.6'
+    
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    compileSdkVersion = 24
+    targetSdkVersion = compileSdkVersion
+    minSdkVersion = 14
+
+    buildToolsVersion = '25.0.2'
+
+    supportLibVersion = '25.1.0'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
+}
