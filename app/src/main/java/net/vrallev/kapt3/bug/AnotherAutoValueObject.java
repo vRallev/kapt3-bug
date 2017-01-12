@@ -3,7 +3,7 @@ package net.vrallev.kapt3.bug;
 import com.google.auto.value.AutoValue;
 
 @AutoValue
-public abstract class SomeAutoValueObject {
+public abstract class AnotherAutoValueObject {
 
   public abstract int getUserId();
   public abstract String getPhotoUrl();
@@ -11,7 +11,7 @@ public abstract class SomeAutoValueObject {
   public abstract long getLastSendDate();
 
   public static Builder builder() {
-    return new AutoValue_SomeAutoValueObject.Builder();
+    return new AutoValue_AnotherAutoValueObject.Builder();
   }
 
   @AutoValue.Builder
@@ -24,6 +24,6 @@ public abstract class SomeAutoValueObject {
 
     public abstract Builder setLastSendDate(long newLastSendDate);
 
-    public abstract SomeAutoValueObject build();
+    public abstract AnotherAutoValueObject build();
   }
 }

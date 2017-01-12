@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SomeAutoValueObject object = SomeAutoValueObject.builder().setPhotoUrl("").setLastSendDate(5).setContactName("").setUserId(4).build();
+        SomeAutoValueObject object = SomeAutoValueObject.Companion.builder().setPhotoUrl("").setLastSendDate(5).setContactName("").setUserId(4).build();
+        AnotherAutoValueObject object2 = AnotherAutoValueObject.builder().setPhotoUrl("").setLastSendDate(5).setContactName("").setUserId(4).build();
     }
 }
